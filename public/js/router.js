@@ -5,7 +5,7 @@
 const pages = {
   home: { title: '首页', icon: 'fa-home', render: () => app.renderHome() },
   chat: { title: 'AI对话', icon: 'fa-comments', render: () => chat.render() },
-  image: { title: 'AI图片', icon: 'fa-image', render: () => app.renderPlaceholder('AI图片生成', '🖼️') },
+  image: { title: 'AI图片', icon: 'fa-image', render: () => imageGen.render() },
   video: { title: 'AI视频', icon: 'fa-video', render: () => app.renderPlaceholder('AI视频生成', '🎬') },
   audio: { title: 'AI音频', icon: 'fa-music', render: () => app.renderPlaceholder('AI音频', '🎵') },
   writing: { title: 'AI写作', icon: 'fa-pen', render: () => app.renderPlaceholder('AI写作', '✍️') },

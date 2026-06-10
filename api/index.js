@@ -29,6 +29,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use('/api/auth', require('../routes/auth'));
 app.use('/api/chat', require('../routes/chat'));
 app.use('/api/models', require('../routes/models'));
+app.use('/api/image', require('../routes/image'));
 app.use('/api/admin', require('../routes/admin'));
 
 // Health check

@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/chat', require('./routes/chat'));
 app.use('/api/models', require('./routes/models'));
+app.use('/api/image', require('./routes/image'));
 app.use('/api/admin', require('./routes/admin'));
 
 // Health check
