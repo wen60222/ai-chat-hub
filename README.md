@@ -78,6 +78,40 @@ ai-chat-hub/
         └── admin.js   # 管理后台
 ```
 
+## Vercel 部署
+
+### 一键部署
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/wen60222/ai-chat-hub)
+
+### 手动部署
+
+```bash
+# 安装 Vercel CLI
+npm i -g vercel
+
+# 部署
+vercel
+```
+
+### ⚠️ 注意事项
+
+Vercel 无服务器环境不支持持久化文件存储。SQLite 数据库在冷启动时会丢失。
+部署到 Vercel 前需要：
+
+**方案A：改用 Turso（边缘SQLite）**
+- 免费额度 9GB 存储
+- API 兼容 SQLite
+
+**方案B：改用 Neon（Serverless PostgreSQL）**
+- 免费额度 0.5GB 存储
+- 需要重写数据库层
+
+**方案C：直接用 Railway（推荐）**
+- 完整 Node.js 运行环境
+- 支持 SQLite 持久化
+- 免费额度够用
+
 ## 后续开发方向
 
 - [ ] 微信/支付宝支付对接
