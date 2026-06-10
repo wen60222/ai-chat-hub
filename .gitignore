@@ -1,0 +1,10 @@
+node_modules/
+data/
+.env
+*.db
+ref_site*.html
+ref_site*.js
+ref_site*.css
+analyze*.js
+explore_api.js
+PLAN.md

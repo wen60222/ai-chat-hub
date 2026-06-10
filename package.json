@@ -1,0 +1,20 @@
+{
+  "name": "ai-chat-hub",
+  "version": "1.0.0",
+  "description": "AI对话聚合平台 - 多模型一站式聊天",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "sql.js": "^1.10.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "uuid": "^9.0.0",
+    "openai": "^4.0.0"
+  }
+}
