@@ -69,6 +69,10 @@
       </div>
 
       <div class="sidebar-footer">
+      <div style="display:flex;gap:4px;margin-top:4px;">
+        <button class="header-btn" id="admin-header-btn" style="display:none;flex:1;" onclick="router.go('admin')"><i class="fas fa-cog"></i> 管理</button>
+        <button class="header-btn" style="flex:1;" onclick="auth.logout()"><i class="fas fa-sign-out-alt"></i> 退出</button>
+      </div>
         <div class="user-card" id="user-card">
           <div class="user-avatar" id="sidebar-avatar">U</div>
           <div class="user-info">
@@ -81,16 +85,6 @@
 
     <!-- Main -->
     <div class="main-content">
-      
-        <div class="header-right">
-          <button class="header-btn" id="admin-header-btn" style="display:none;" onclick="router.go('admin')">
-            <i class="fas fa-cog"></i> 管理
-          </button>
-          <button class="header-btn" onclick="auth.logout()">
-            <i class="fas fa-sign-out-alt"></i> 退出
-          </button>
-        </div>
-      </div>
 
       <div class="page-container" id="page-content">
         <!-- Pages rendered here -->
